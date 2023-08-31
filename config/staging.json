@@ -1,6 +1,6 @@
 {
   "port": 2023,
-  "hostAddress": "",
+  "hostAddress": "ec2-15-207-14-18.ap-south-1.compute.amazonaws.com:2023",
   "databaseHost": "localhost",
   "databasePort": "27017",
   "databaseName": "bhavishyanirman-stag",
