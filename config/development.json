@@ -1,0 +1,37 @@
+{
+  "port": 2023,
+  "hostAddress": "",
+  "databaseHost": "0.0.0.0",
+  "databasePort": "27017",
+  "databaseName": "bhavishyanirman-dev",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "nodemailer": {
+    "service": "gmail",
+    "email": "bhavishyanirmandevelopers@gmail.com",
+    "password": "dtfxmarcfchrhmqw"
+  },
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "Bhavishyanirman-node",
+      "version": "2.0",
+      "description": "Bhavishyanirman-node - API Docs"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "cloudinary": {
+    "cloud_name": "dzptjnfvv",
+    "api_key": "864421635154335",
+    "api_secret": "HfgSDPM68EtR4v8ylLSqfxfD1fg"
+  }
+}

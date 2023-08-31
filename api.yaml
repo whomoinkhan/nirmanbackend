@@ -1,0 +1,188 @@
+definitions:
+  securitySchemes:
+    tokenauth:
+      type: basic
+      description: bearer auth
+      name: Authorization
+      in: header
+    demouser:
+      type: basic
+  #-------------------------------------------------------------------
+  #---------------------------ADMIN----------------------------------
+  #-------------------------------------------------------------------
+
+
+  
+  login:
+    required:
+      - email
+      - password
+    properties:
+      email:
+        type: string
+      password: 
+        type: string
+         
+
+  verifyOTP:
+    required:
+      - email
+      - otp
+    properties:
+      email:
+        type: string
+      otp:
+        type: string
+
+  resendOTP:
+    required:
+      - mobileNumber
+      - countryCode
+    properties:
+      mobileNumber:
+        type: string
+      countryCode:
+        type: string
+      
+
+  forgotPassword:
+    required:
+      - email
+    properties:
+      email:
+        type: string
+
+  resetPassword:
+    required:
+      - password
+      - confirmPassword
+    properties:
+      password:
+        type: string
+      confirmPassword:
+        type: string
+
+  resendOtp:
+    required:
+      - email
+    properties:
+      email:
+        type: string
+        
+
+  editProfile:
+    properties:
+      email:
+        type: string
+      mobileNumber:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      countryCode:
+        type: string
+      address:
+        type: string
+      dateOfBirth:
+        type: string
+      profilePic:
+        type: string
+      location:
+        type: object
+        properties:
+          type:
+            type: string
+          coordinates:
+            type: array
+            items:
+              type: integer
+
+
+        
+
+  changePassword:
+    required:
+      - oldPassword
+      - newPassword
+    properties:
+      oldPassword:
+        type: string
+      newPassword: 
+        type: string
+
+  addProperty:
+    required:
+      - title
+      - description
+      - imageUrl
+    properties:
+      title:
+        type: string
+      imageUrl:
+        type: string
+      propertyNo:
+        type: string
+      description:
+        type: string
+      short_description:
+        type: string
+      state:
+        type: string
+      district:
+        type: string
+      price:
+        type: string  
+      propertyType:
+        type: string
+      location:
+        type: object
+        properties:
+          type:
+            type: string
+          coordinates:
+            type: array
+            items:
+              type: integer
+
+  editProperty:
+    properties:
+      propertyId:
+        type: string
+      title:
+        type: string
+      imageUrl:
+        type: string
+      propertyNo:
+        type: string
+      description:
+        type: string
+      short_description:
+        type: string
+      state:
+        type: string
+      district:
+        type: string
+      price:
+        type: string  
+      propertyType:
+        type: string
+      location:
+        type: object
+        properties:
+          type:
+            type: string
+          coordinates:
+            type: array
+            items:
+              type: integer
+
+   
+   
+  
+
+
+ 
+
+
+ 
